@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kiran Kumar Chaudhary <hellokiran2020@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "gatsby": "^2.0.116",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.17",
@@ -13,10 +14,12 @@
     "gatsby-plugin-sharp": "^2.0.20",
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-sharp": "^2.1.13",
+    "jss": "^9.8.7",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-jss": "^8.6.1"
   },
   "keywords": [
     "gatsby"
@@ -27,7 +30,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "upgrade-version": "standard-version",
+    "deploy": "yarn upgrade-version && gatsby build && gh-pages -d public -b master",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
@@ -38,6 +42,7 @@
     "url": "https://github.com/chaudharykiran/portfolio/issues"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "standard-version": "^4.4.0"
   }
 }
