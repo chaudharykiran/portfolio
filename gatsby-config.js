@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Developer - Problem Solver - Entrepreneur`,
+    title: 'Developer - Problem Solver - Entrepreneur',
     description: `Kiran Kumar Chaudhary`,
-    author: `@gatsbyjs`,
+    author: `@chaudharykiran`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
