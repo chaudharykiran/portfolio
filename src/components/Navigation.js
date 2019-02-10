@@ -23,7 +23,7 @@ const Navigation = (props) => {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" color="inherit">
-          {brand.toUpperCase()}
+          <Link to="/">{brand.toUpperCase()}</Link>
         </Typography>
         <Typography variant="h4" color="inherit">
           <Link to='/blog'>Blogs</Link>
