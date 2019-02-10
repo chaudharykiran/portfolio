@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "description": "Personal portfolio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Kiran Kumar Chaudhary <hellokiran2020@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
