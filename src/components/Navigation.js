@@ -6,20 +6,12 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 
 import withRoot from '../withRoot';
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
   grow: {
     flexGrow: 1,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
   },
 };
 
@@ -30,12 +22,18 @@ const Navigation = (props) => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" color="inherit" className={classes.grow}>
+        <Typography variant="h6" color="inherit">
           {brand.toUpperCase()}
         </Typography>
-        <Link to='/Blogs'>Blogs</Link>
-        <Button color="inherit">My work</Button>
-        <Button color="inherit">Contact</Button>
+        <Typography variant="h4" color="inherit">
+          <Link to='/blog'>Blogs</Link>
+        </Typography>
+        <Typography variant="h4" color="inherit">
+          <Link to='/projects'>My work</Link>
+        </Typography>
+        <Typography variant="h4" color="inherit">
+          <Link to='/contact'>Contact</Link >
+        </Typography>
       </Toolbar>
   </AppBar> 
   );
